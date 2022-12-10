@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Meta Etiketleri -->
+	<meta charset="utf-8">
+	<meta name="description" content="Restaurant Web Sitesi Lezzet Durağı">
+	<meta name="keywords" content="restaurant, lezzet, yemek,menü,ızgaralar,yemekler,çorbalar,tatlılar,ev yemekleri,kebaplar, içecekler, akşam yemekleri">
+	<meta name="author" content="Pınar Çakmak">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Flaner İstanbul Restaurant</title>
+
+	<!-- CSS Bağlantısı -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- Stil İkonu -->
+    <link rel="shortcut icon" href="images/fiiii.ico">
+	<!-- Yazı Ailesi Bağlantıları -->
+	<!-- EL YAZISI -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	<!-- Büyük Başlıklar İçin-->
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+	<!-- Alt Başlıklar İçin-->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+	<!-- İçerik Metni İçin -->
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#navMobileButton").click(function(){
+				$("#ulNavMobile").toggle(200);
+			})
+		})
+	</script>
+
+</head>
+<body>
+    <header id="contentHeader" style="background: url(images/resst.jpg); background-size: cover; background-repeat:no-repeat; background-position: center;">
+    	<div id="contentheaderContainer">
+    		<div id="headerTop">
+    			<ul id="ulTopLeft">
+    				<li><a href="index.html">ANASAYFA</a></li>
+    				<li><a href="about-us.html">HAKKIMIZDA</a></li>
+    				<li><a href="contact.html">İLETİŞİM</a></li>
+    			</ul>
+    			<div id="topRight">
+    				
+    				<div class="topContactLogo">
+    					<img src="images/phone.png">
+    				</div>
+    				<div class="topContactText">
+    						0123 123 12 23
+    				</div>
+    				
+
+    			
+    				<div class="topContactLogo">
+    					<img src="images/e-mail.png">
+    				</div>
+    				<div class="topContactText">
+    				info@flaneristanbul.com
+    				</div>
+    				
+    			</div>
+    			<div style="clear: both;"></div>
+    		</div>
+    		
+    	</div>
+    	<!-- NAV BAŞLANGICI -->
+    	<nav>
+    		<div id="navContainer">
+    			<div id="navLogo">FLANER İSTANBUL</div>
+    			<ul id="ulNavRight">
+    				<li>
+    					<a href="index.html">ANASAYFA</a>
+    				</li>
+    				<li>
+    					<a href="menu.html">MENÜ</a>
+    				</li>
+    				<li>
+    					<a href="reservation.html">REZERVASYON</a>
+    				</li>
+    				
+    				<li>
+    					<a href="contact.html">İLETİŞİM</a>
+    				</li>
+    			</ul>
+    			<div id="navMobileButton"></div>
+    			<ul id="ulNavMobile">
+    				<li>
+    					<a href="index.html">ANASAYFA</a>
+    				</li>
+    				<li>
+    					<a href="menu.html">MENÜ</a>
+    				</li>
+    				<li>
+    					<a href="reservation.html">REZERVASYON</a>
+    				</li>
+    				
+    				<li>
+    					<a href="contact.html">İLETİŞİM</a>
+    				</li>
+    			</ul>
+    		</div>
+    	</nav>
+
+    </header>
+    <!-- SECTION BAŞLANGICI -->
+    <section class="banner">
+    	<h2>Rezervasyonunuzu Şimdi Yapın</h2>
+    	<div class="cardContent">
+    		<h3>Rezervasyon</h3>
+    		<form>
+    			<div class="formRow">
+    				<select name="days">
+    					<option value="day-select">Gün Seçiniz</option>
+    					<option value="pazartesi">Pazartesi</option>
+    					<option value="salı">Salı</option>
+    					<option value="çarşamba">Çarşamba</option>
+    					<option value="perşembe">Perşembe</option>
+    					<option value="cuma">Cuma</option>
+    					<option value="cumartesi">Cumartesi</option>
+    					<option value="pazar">Pazar</option>
+    			    </select>
+    			    <select name="hours">
+    			    	<option value="hour-select">Saat Seç</option>
+    			    	<option value="10">10:00</option>
+    			    	<option value="12">12:00</option>
+    			    	<option value="14">14:00</option>
+    			    	<option value="16">16:00</option>
+    			    	<option value="18">18:00</option>
+    			    	<option value="20">20:00</option>
+                        <option value="22">22:00</option>
+    			    </select>
+    			</div>
+    			<div class="formRow">
+    				<input type="text" placeholder="İsim Soyisim">
+    				<input type="text" placeholder="Telefon Numarası">
+    			</div>
+    			<div class="formRow">
+    				<input type="number" placeholder="Kişi Sayısı?" min="1">
+    				<input type="submit" value="Rezervasyon Oluştur">
+    			</div>
+    		</form>
+    	</div>
+    </section>
+    
+    <!-- FOOTER BAŞLANGIÇ -->
+    <footer>
+    	<div id="footerContainer">
+    		<div class="footerBox">
+    			<h1>FLANER İSTANBUL</h1>
+    			<a href=""><img src="images/facebook.png"></a>
+    			<a href=""><img src="images/instagram.png"></a>
+    			<a href=""><img src="images/twitter.png"></a>
+    		</div>
+    		<div class="footerBox">
+    			<h2>BİZE ULAŞIN</h2>
+    			<p><span style="color: #EA2027;">Tel</span>: 0123 123 12 23</p>
+    			<p><span style="color: #EA2027;">Email</span>: info@flaneristanbul.com</p>
+    			<p><span style="color: #EA2027;">Web</span>: www.flaneristanbul.com</p>
+    			<p><span style="color: #EA2027;">Adres</span>: Flaner Mahallesi Flaner Sokak No:10 Florya/İstanbul</p>
+    		</div>
+    		<div class="footerBox">
+    			<h2>ABONE OL</h2>
+    			<p>İndirimlerden yararlanmak istiyorsanız email adresinizle kayıt olmanız yeterlidir.</p>
+    			<form>
+    				<input type="email" name="email" placeholder="Email Adresinizi Giriniz" required><br>
+    				<input type="submit" value="ABONE OL" style="background:#EA2027; color: #ffffff;">
+    			</form>
+    		</div>
+    		<div style="clear:left;"></div>
+    	</div>
+    	<div id="copyright">
+    		&copy 2022 - Bu website gerçek bir restauranta ait değildir.
+    	</div>
+    </footer>
+</body>
+</html>
